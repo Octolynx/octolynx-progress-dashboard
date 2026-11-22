@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Octolynx | Project progress</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar"><div class="brand">O <span>Octolynx</span></div><span class="badge">PUBLIC PROGRESS</span></header>
+  <main>
+    <div class="intro"><p class="eyebrow">PROJECT MANAGEMENT</p><h1>Progress at a glance.</h1><p>A high-level view of our work. The underlying tracker and individual issues remain private.</p></div>
+    <nav aria-label="Dashboard sections"><a href="#overview">Overview</a><a href="#epics">Epics</a><a href="#stories">User stories</a></nav>
+    <section id="overview" aria-labelledby="overview-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / OVERVIEW</p><h2 id="overview-title">Issue progress</h2></div><span id="updated" class="muted" role="status">Loading latest snapshot…</span></div>
+      <div id="error" class="notice error" role="alert" hidden></div>
+      <div class="cards">
+        <article class="card"><span>Total issues</span><strong id="total">—</strong><small>On the project board</small></article>
+        <article class="card"><span>To do</span><strong id="todo">—</strong><small>Awaiting work</small></article>
+        <article class="card"><span>Done</span><strong id="done">—</strong><small>Marked done on the board</small></article>
+        <article class="card"><span>Owner review</span><strong id="review">—</strong><small>Requires owner review</small></article>
+      </div>
+      <div class="progress-card"><div class="progress-heading"><div><h3>Board completion</h3><p>Share of board items marked Done</p></div><strong id="percentage">—</strong></div><div class="track" role="progressbar" aria-label="Board completion" aria-valuemin="0" aria-valuemax="100" id="progress"><div id="progress-fill"></div></div><small>Board status is a planning signal, not a production-readiness guarantee.</small></div>
+    </section>
+    <section id="epics" class="placeholder"><div><p class="eyebrow">02 / EPICS</p><h2>Epic progress</h2><p>Progress is unavailable until epics and their child work are organized in the tracker.</p></div><span class="status">NOT YET AVAILABLE</span></section>
+    <section id="stories" class="placeholder"><div><p class="eyebrow">03 / USER STORIES</p><h2>User story progress</h2><p>Progress is unavailable until user stories are identified and linked in the tracker.</p></div><span class="status">NOT YET AVAILABLE</span></section>
+  </main>
+  <footer>Octolynx · Aggregate project progress</footer>
+</body>
+</html>
